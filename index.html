@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    <div class="settings">
+      <label for="length">Password Length:</label>
+      <input type="number" id="length" min="8" max="32" value="16">
+
+      <div class="checkboxes">
+        <label><input type="checkbox" id="uppercase" checked> Uppercase</label>
+        <label><input type="checkbox" id="lowercase" checked> Lowercase</label>
+        <label><input type="checkbox" id="numbers" checked> Numbers</label>
+        <label><input type="checkbox" id="symbols" checked> Symbols</label>
+      </div>
+    </div>
+
+    <div class="live-preview">
+      <p>Live Preview:</p>
+      <span id="preview">YourPassword</span>
+    </div>
+
+    <button id="generate">Generate Password</button>
+    <div class="output">
+      <input type="text" id="password" readonly>
+      <button id="copy">Copy</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
