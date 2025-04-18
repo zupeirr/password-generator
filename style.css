@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #333;
+  --button-bg: #0078d7;
+  --button-text: white;
+  --input-border: #ddd;
+}
+
+.dark-mode {
+  --bg-color: #333;
+  --text-color: #f4f4f9;
+  --button-bg: #005bb5;
+  --button-text: white;
+  --input-border: #555;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.settings {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.checkboxes label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.output {
+  display: flex;
+  align-items: center;
+}
+
+#password {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.live-preview {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#preview {
+  font-weight: bold;
+  color: var(--button-bg);
+  display: inline-block;
+  margin-top: 0.5rem;
+}
